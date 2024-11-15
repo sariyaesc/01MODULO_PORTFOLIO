@@ -1,0 +1,65 @@
+html,body{
+    height:3000px;
+    margin:0px
+}
+
+#portfolio_header{
+    font-family:montserrat,andale mono;
+    font-size: 120px;
+    margin-bottom: 20px;
+}
+
+.nav-link{
+    width: 50;
+    font-size:30px;
+    font-weight: bold;
+    margin:25px 70px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid black;
+    padding-bottom:10px;
+}
+
+.contenedor_madre{
+    height:30%;
+    display: flex;
+}
+
+#cont_imagenes_menu{
+    width: 35%;
+    overflow: hidden;
+    background-image: url("PORTAFOLIO/IMGS/FOTO 0 14.png");
+    background-size: cover;   /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center;  /* Centra la imagen */
+}
+
+
+#cont_navegacion{
+    background-color: #f9f7f3;
+    width: 70%;
+    padding:70px 50px;
+}
+
+#frasesitalinda{
+    display: flex;
+    justify-content: flex-end;
+    padding:90px 60px;
+    font-size: 30px ;
+    font-family:montserrat,andale mono;
+}
+
+#aboutme_header{
+    color: white;
+    font-family:montserrat,andale mono;
+    font-style: italic;
+    font-size: 100px;
+    padding: 70px 50px;
+    background-color: black;
+}
+
+#profile{
+    background-color:#f9f7f3;
+    height:25%;
+    flex-direction: column;
+}
+
