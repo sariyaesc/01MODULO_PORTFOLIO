@@ -25,6 +25,8 @@ html,body{
     display: flex;
 }
 
+
+
 #cont_imagenes_menu{
     width: 35%;
     overflow: hidden;
@@ -33,6 +35,20 @@ html,body{
     background-position: center;  /* Centra la imagen */
 }
 
+
+/* Media Query para pantallas grandes (PC) */
+@media (min-width: 768px) {
+    #cont_imagenes_menu {
+        background-position: top center;  
+    }
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    #cont_imagenes_menu {
+        background-position: center center;  
+    }
+}
 
 #cont_navegacion{
     background-color: #f9f7f3;
