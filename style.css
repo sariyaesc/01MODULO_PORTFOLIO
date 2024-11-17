@@ -25,7 +25,10 @@ html,body{
     display: flex;
 }
 
-
+#nombre{
+    font-family:montserrat,andale mono;
+    font-size:1.5em;
+}
 
 #cont_imagenes_menu{
     width: 35%;

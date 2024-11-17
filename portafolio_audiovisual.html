@@ -8,10 +8,29 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
+
+    <div class="position-fixed top-0 end-0 p-3" style="z-index: 1055;">
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+            <div class="toast-header">
+                <strong class="me-auto">Bootstrap</strong>
+                <small class="text-body-secondary">Just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Hello, world! This is a toast message.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="p-3 mb-2 bg-black text-white" id="nombre">Sara Escamilla Enríquez</div>
+
+
     <div class='contenedor_madre' id="menu">
         <div class="contenedor" id="cont_imagenes_menu">
-       
         </div>
 
         <div class='contenedor' id="cont_navegacion">
@@ -28,10 +47,10 @@
             </div>
             <p id="frasesitalinda">"You are a quote onquote fantastic Mr. Fox"</p>
         </div>
-    
-    
-    
     </div>
+
+
+
 
     <div class='contenedor_madre' id="profile">
         <header id="aboutme_header">About me</header>
@@ -39,7 +58,13 @@
     </div>
 
 
+
+
+
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
