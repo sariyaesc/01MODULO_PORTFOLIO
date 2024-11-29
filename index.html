@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -15,98 +15,129 @@
     
 
 <!--#region NAV Section -->
-    <section class="text-center">
-      <!-- Navbar Section -->
-    <header class="sticky top-0 z-50">
-      <nav class="container mx-auto flex justify-between p-10 bg-[url('IMAGENES/banner.svg')] bg-cover bg-center" style="height: 630px;">
-        <ul class="flex space-x-4 text-sm font-medium">
-          <li>
-              <a href="#profile" class="text-[#ff0000] hover:text-gray-500 transition">01 PROFILE</a>
-          </li>
-          <li>
-              <a href="#photo" class="text-[#ff0000] hover:text-gray-500 transition">02 PHOTO</a>
-          </li>
-          <li>
-              <a href="#video_section" class="text-[#ff0000] hover:text-gray-500 transition">03 VIDEO</a>
-          </li>
-          <li>
-            <a href="#developer_section" class="text-[#ff0000] hover:text-gray-500 transition">04 SOFTWARE</a>
-        </li>
-      </ul>  
-        
-           <ul class="flex space-x-8 text-sm font-medium">
-            <li>
-              <a href="https://www.instagram.com/sariya.esc/" target="_blank" rel="noopener noreferrer"
-              class="text-[#ff0000] hover:text-gray-500 transition
-              text-sm font-medium">[INSTAGRAM]</a>
-            </li>
-            <li>
-              <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
-              class="text-[#ff0000] hover:text-gray-500 transition
-              text-sm font-medium">[GITHUB]</a>
-            </li>
-            <li>
-              <a href="https://www.tiktok.com/@sariya.esc" target="_blank" rel="noopener noreferrer"
-              class="text-[#ff0000] hover:text-gray-500 transition
-              text-sm font-medium">[TIKTOK]</a>
-            </li>
-          </ul>  
+<header class="fixed top-0 z-50 w-full bg-[#fffdfb]">
+  <nav class="container mx-auto flex justify-between px-6 pt-5 pb-3">
+    <ul class="flex space-x-4 text-sm font-medium">
+      <li>
+        <a href="#profile_section" class="text-[#ff0000] hover:text-gray-500 transition">01 PROFILE</a>
+      </li>
+      <li>
+        <a href="#video_section" class="text-[#ff0000] hover:text-gray-500 transition">02 AUDIOVISUAL</a>
+      </li>
+      <li>
+        <a href="#software_section" class="text-[#ff0000] hover:text-gray-500 transition">03 SOFTWARE</a>
+      </li>
+      <li>
+        <a href="#contact_section" class="text-[#ff0000] hover:text-gray-500 transition">04 CONTACT ME</a>
+      </li>
+    </ul>  
 
-      </nav>
-  </header>
+    <ul class="flex space-x-8 text-sm font-medium">
+      <li>
+        <a href="https://www.instagram.com/sariya.esc/" target="_blank" rel="noopener noreferrer"
+        class="text-[#ff0000] hover:text-gray-500 transition text-sm font-medium">[INSTAGRAM]</a>
+      </li>
+      <li>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+        class="text-[#ff0000] hover:text-gray-500 transition text-sm font-medium">[GITHUB]</a>
+      </li>
+      <li>
+        <a href="https://www.tiktok.com/@sariya.esc" target="_blank" rel="noopener noreferrer"
+        class="text-[#ff0000] hover:text-gray-500 transition text-sm font-medium">[TIKTOK]</a>
+      </li>
+    </ul>  
+  </nav>
+</header>
 
-    </section>
+<!-- Background Section Below Navbar -->
+<section class="bg-[url('IMAGENES/banner.svg')] bg-cover bg-center h-[630px]">
+  <!-- Content of your section below the navbar -->
+</section>
+
 <!--#endregion-->
 
 <!--#region ABOUT ME Section -->
-    <section class="text-center">
+<section id="profile_section" class="w-full bg-[#ff0000] pt-16 pb-32">
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-20">
+    <p class="text-[#fffdfb] text-3xl">About Me</p>
+    <p class="text-[#fffdfb] text-xs pt-1 pb-10">Sara Escamilla Enríquez | 21 y.o</p>
+    <div class="grid gap-20 sm:grid-cols-2 lg:grid-cols-2">
+      <section>
+        <p class="text-[#fffdfb] text-xs leading-normal">
+          Hi! I'm Sara, also referred to as sariya, an audiovisual artist who at night is a software developer (sometimes the other way around). 
+          The only thing that truly defines me is the need to create with a creative and enthusiastic approach to every project I set my mind to. 
+          With my current studies in Technology Engineering, and my vast experience in Audiovisual Production, I have a varied and adaptable profile to any kind of project. 
+          <br>I am ready and excited to work with you! :)
+        </p>
+      </section>
+      <section>
+        <p class="text-[#fffdfb] text-xs leading-normal font-medium">La Salle University</p>
+        <p class="text-[#fffdfb] text-xs leading-normal pb-3">
+          B.E. Information Technologies and Telecommunications (Current GPA 95.8/100): <em class="font-medium"><br>2022 - Present</em>
+        </p>
+        <p class="text-[#fffdfb] text-xs leading-normal font-medium">La Salle University</p>
+        <p class="text-[#fffdfb] text-xs leading-normal pb-3">
+          B.E. Marketing (GPA 96.6/100):
+          <em class="font-medium"><br>Aug. 2021 - May 2022</em>
+        </p>
+      </section>
+    </div>
+  </div>
+</section>
 
-
-
-
-    </section>
 <!--#endregion-->
 
 
-    <!-- Video Portfolio Section -->
+<!--#region Video Portfolio Section -->
     <section id="video_section" class="container mx-auto py-16">
-        <h2 class="text-4xl font-bold text-center mb-12">Video Portfolio</h2>
-        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            <!-- Video Card -->
-            <article class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
-                <video controls src="../VIDEOS/ENCINILLAS REEL 2.mp4" class="rounded-md mb-4"></video>
+      <h2 class="text-4xl font-medium text-center mb-12 text-[#ff0000]">My [Audiovisual] Productions</h2>
+      <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3 mx-5">
+          <!-- Video Card -->
+          <section>
+            <article class="bg-[#fffdfb] shadow-lg rounded-lg p-6 hover:shadow-xl transition h-fit">
+                <video controls src="../VIDEOS/ENCINILLAS REEL 2.mp4" class="rounded-lg mb-4 w-full h-auto"></video>
                 <div class="text-xs text-gray-500">2024</div>
-                <div class="text-sm font-medium text-blue-500 mb-2">Video Edition</div>
-                <h3 class="text-lg font-semibold mb-2">Encinillas</h3>
-                <p class="text-sm text-gray-600">
-                    Video Edition done by stock resources.
-                </p>
+                <div class="text-sm font-medium text-[#ff0000] mb-2">Video Edition</div>
+                <h3 class="text-lg font-semibold text-[#333] mb-2">Encinillas</h3>
+               
             </article>
-
-            <!-- Video Card -->
-            <article class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
-                <video controls src="../VIDEOS/REEL 2 LA CASONA.mp4" class="rounded-md mb-4"></video>
-                <div class="text-xs text-gray-500">2024</div>
-                <div class="text-sm font-medium text-blue-500 mb-2">Video Edition</div>
-                <h3 class="text-lg font-semibold mb-2">La Casona</h3>
-                <p class="text-sm text-gray-600">
-                    Video edition done with recordings of external contributors.
-                </p>
-            </article>
-
-            <!-- Video Card -->
-            <article class="bg-white shadow-md rounded-lg p-6 hover:shadow-lg transition">
-                <video controls src="../VIDEOS/KOKO COLL VIDEO 1.mp4" class="rounded-md mb-4"></video>
-                <div class="text-xs text-gray-500">2024</div>
-                <div class="text-sm font-medium text-blue-500 mb-2">Video Production</div>
-                <h3 class="text-lg font-semibold mb-2">Koko Collections</h3>
-                <p class="text-sm text-gray-600">
-                    Audiovisual collab with local brand.
-                </p>
-            </article>
-        </div>
-    </section>
-
+        </section>
+          <!-- Video Card -->
+        <section class="flex flex-col justify-between">
+          <article class="bg-[#fffdfb] shadow-lg rounded-lg p-6 hover:shadow-xl transition h-fit">
+            <div class="mb-4 relative w-full">
+                <video controls src="../VIDEOS/REEL 2 LA CASONA.mp4" class="rounded-lg w-full h-auto"></video>
+            </div>
+            <div class="text-xs text-gray-500">2024</div>
+            <div class="text-sm font-medium text-[#ff0000] mb-2">Video Edition</div>
+            <h3 class="text-lg font-semibold text-[#333] mb-2">La Casona</h3>
+            
+        </article>
+        <article class="bg-[#fffdfb] shadow-lg rounded-lg p-6 hover:shadow-xl transition h-fit">
+          <div class="mb-4 relative w-full">
+              <video controls src="../VIDEOS/REEL 2 LA CASONA.mp4" class="rounded-lg w-full h-auto"></video>
+          </div>
+          <div class="text-xs text-gray-500">2024</div>
+          <div class="text-sm font-medium text-[#ff0000] mb-2">Video Edition</div>
+          <h3 class="text-lg font-semibold text-[#333] mb-2">La Casona</h3>
+          
+      </article>
+      </section>
+        
+  
+          <!-- Video Card -->
+        <section>
+          <article class="bg-[#fffdfb] shadow-lg rounded-lg p-6 hover:shadow-xl transition h-fit">
+              <video controls src="../VIDEOS/KOKO COLL VIDEO 1.mp4" class="rounded-lg mb-4 w-full h-auto"></video>
+              <div class="text-xs text-gray-500">2024</div>
+              <div class="text-sm font-medium text-[#ff0000] mb-2">Video Production</div>
+              <h3 class="text-lg font-semibold text-[#333] mb-2">Koko Collections</h3>
+          </article>
+        </section>
+      </div>
+  </section>
+  
+<!--#endregion-->
 </body>
 
 </html>
