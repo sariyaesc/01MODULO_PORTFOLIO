@@ -89,55 +89,88 @@
 
 
 <!--#region Video Portfolio Section -->
-    <section id="video_section" class="container mx-auto py-16">
-      <h2 class="text-4xl font-medium text-center mb-12 text-[#ff0000]">My [Audiovisual] Productions</h2>
-      <div class="grid gap-7 sm:grid-cols-2 lg:grid-cols-3 mx-5">
-          <!-- Video Card -->
-          <section>
-            <article class="bg-[#fffdfb] shadow-lg rounded-lg p-6 hover:shadow-xl transition h-fit">
-                <video controls src="./VIDEOS/ENCINILLAS REEL 2.mp4" class="rounded-lg mb-4 w-full h-auto"></video>
-                <div class="text-xs text-gray-500">2024</div>
-                <div class="text-sm font-medium text-[#ff0000] mb-2">Video Edition</div>
-                <h3 class="text-lg font-semibold text-[#333] mb-2">Encinillas</h3>
-               
-            </article>
-        </section>
-          <!-- Video Card -->
-        <section class="flex flex-col justify-between">
-          <article class="bg-[#fffdfb] shadow-lg rounded-lg p-6 hover:shadow-xl transition h-fit">
-            <div class="mb-4 relative w-full">
-                <video controls src="./VIDEOS/REEL 2 LA CASONA.mp4" class="rounded-lg w-full h-auto"></video>
-            </div>
-            <div class="text-xs text-gray-500">2024</div>
-            <div class="text-sm font-medium text-[#ff0000] mb-2">Video Edition</div>
-            <h3 class="text-lg font-semibold text-[#333] mb-2">La Casona</h3>
-            
-        </article>
-        <article class="bg-[#fffdfb] shadow-lg rounded-lg p-6 hover:shadow-xl transition h-fit">
-          <div class="mb-4 relative w-full">
-              <video controls src="./VIDEOS/REEL 2 LA CASONA.mp4" class="rounded-lg w-full h-auto"></video>
-          </div>
-          <div class="text-xs text-gray-500">2024</div>
-          <div class="text-sm font-medium text-[#ff0000] mb-2">Video Edition</div>
-          <h3 class="text-lg font-semibold text-[#333] mb-2">La Casona</h3>
-          
+<section id="video_section" class="w-full bg-[#fffdfb] px-auto py-16">
+  
+  
+  <div class="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-20 pb-5">
+  <div class="grid gap-20 sm:grid-cols-2 lg:grid-cols-2">
+    <section>
+      <h2 class="text-4xl font-medium mb-10 text-[#ff0000]">My Photos</h2> 
+      <p class="text-[#ff0000] text-xs leading-normal">
+        My Camera: Canon EOS 250D <br>
+        Tools: CaptureOne, Lightroom, Basic Photoshop. <br> 
+        [ONE YEAR OF EXPERIENCE]
+      </p>
+    </section>
+  </div>
+</div>
+
+
+  
+  
+  
+  
+  <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5 px-auto justify-items-center h-auto">  
+    <!-- Video Card -->
+    <section>
+      <article class="shadow-lg p-6 hover:shadow-xl transition w-80 h-auto"> <!-- Reduce article size -->
+        <video src="./VIDEOS/KOKO COLL VIDEO 1.mp4" id="koko_video"
+        class="mb-4 w-full h-full object-cover cursor-pointer" muted></video> <!-- Video adjusts to article size -->
+        <h3 class="text-lg text-[#ff0000]">KOKO COLLECTIONS</h3>
       </article>
-      </section>
-        
+    </section>
+    <!-- Video Card -->
+    <section class="flex flex-col justify-between">
+      <article class="shadow-lg p-6 hover:shadow-xl transition  h-fit">
+        <div class="mb-4 relative w-full">
+          <video src="./VIDEOS/REEL_CASONA.mp4" class="w-full h-auto cursor-pointer" muted></video>
+        </div>
+        <h3 class="text-sm text-[#ff0000]">LA CASONA</h3>
+      </article>
+    </section>
+
+
+    <!-- Video Card -->
+    <section class="flex flex-col justify-between">
+      <article class="shadow-lg p-6 hover:shadow-xl transition  h-fit">
+        <div class="mb-4 relative w-full">
+          <video src="./VIDEOS/REEL_CASONA.mp4" class="w-full h-auto cursor-pointer" muted></video>
+        </div>
+        <h3 class="text-sm text-[#ff0000]">La Casona</h3>
+      </article>
+    </section>
+
+
+    <section>
+      <article class="shadow-lg p-6 hover:shadow-xl transition w-80 h-auto"> <!-- Reduce article size -->
+        <video src="./VIDEOS/ENCINILLAS REEL 2.mp4" class="mb-4 w-full h-full object-cover cursor-pointer" muted></video> <!-- Video adjusts to article size -->
+        <h3 class="text-lg text-[#ff0000]">ENCINILLAS</h3>
+      </article>
+    </section>
+
+  </div>
   
-          <!-- Video Card -->
-        <section>
-          <article class="bg-[#fffdfb] shadow-lg rounded-lg p-6 hover:shadow-xl transition h-fit">
-              <video controls src="./VIDEOS/KOKO COLL VIDEO 1.mp4" class="rounded-lg mb-4 w-full h-auto"></video>
-              <div class="text-xs text-gray-500">2024</div>
-              <div class="text-sm font-medium text-[#ff0000] mb-2">Video Production</div>
-              <h3 class="text-lg font-semibold text-[#333] mb-2">Koko Collections</h3>
-          </article>
-        </section>
-      </div>
-  </section>
-  
-<!--#endregion-->
+
+
+
+<script>
+  // Selecciona todos los videos en la página
+  const videos = document.querySelectorAll("video");
+
+  videos.forEach((video) => {
+    video.addEventListener("click", () => {
+      if (video.paused) {
+        video.muted = false; // Activa el audio
+        video.play(); // Reproduce el video
+      } else {
+        video.pause(); // Pausa el video
+      }
+    });
+  });
+</script>
+
+
+
 </body>
 
 </html>
