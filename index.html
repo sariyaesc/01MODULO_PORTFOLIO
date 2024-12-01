@@ -22,13 +22,16 @@
         <a href="#profile_section" class="text-[#ff0000] hover:text-gray-500 transition">01 PROFILE</a>
       </li>
       <li>
-        <a href="#video_section" class="text-[#ff0000] hover:text-gray-500 transition">02 AUDIOVISUAL</a>
+        <a href="#photos_section" class="text-[#ff0000] hover:text-gray-500 transition">02 PHOTOS</a>
       </li>
       <li>
-        <a href="#software_section" class="text-[#ff0000] hover:text-gray-500 transition">03 SOFTWARE</a>
+        <a href="#video_section" class="text-[#ff0000] hover:text-gray-500 transition">03 VIDEOS</a>
       </li>
       <li>
-        <a href="#contact_section" class="text-[#ff0000] hover:text-gray-500 transition">04 CONTACT ME</a>
+        <a href="#software_section" class="text-[#ff0000] hover:text-gray-500 transition">04 SOFTWARE</a>
+      </li>
+      <li>
+        <a href="#contact_section" class="text-[#ff0000] hover:text-gray-500 transition">05 CONTACT ME</a>
       </li>
     </ul>  
 
@@ -89,67 +92,67 @@
 
 
 <!--#region Video Portfolio Section -->
-<section id="video_section" class="w-full bg-[#fffdfb] px-auto py-16">
-  
-  
+<!--#region Video Portfolio Section -->
+<!--#region Video Portfolio Section -->
+<section id="photos_section" class="w-full bg-[#fffdfb] py-16">
   <div class="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-20 pb-5">
-  <div class="grid gap-20 sm:grid-cols-2 lg:grid-cols-2">
-    <section>
-      <h2 class="text-4xl font-medium mb-10 text-[#ff0000]">My Photos</h2> 
-      <p class="text-[#ff0000] text-xs leading-normal">
-        My Camera: Canon EOS 250D <br>
-        Tools: CaptureOne, Lightroom, Basic Photoshop. <br> 
-        [ONE YEAR OF EXPERIENCE]
-      </p>
-    </section>
-  </div>
-</div>
-
-
-  
-  
-  
-  
-  <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-5 px-auto justify-items-center h-auto">  
-    <!-- Video Card -->
-    <section>
-      <article class="shadow-lg p-6 hover:shadow-xl transition w-80 h-auto"> <!-- Reduce article size -->
-        <video src="./VIDEOS/KOKO COLL VIDEO 1.mp4" id="koko_video"
-        class="mb-4 w-full h-full object-cover cursor-pointer" muted></video> <!-- Video adjusts to article size -->
-        <h3 class="text-lg text-[#ff0000]">KOKO COLLECTIONS</h3>
-      </article>
-    </section>
-    <!-- Video Card -->
-    <section class="flex flex-col justify-between">
-      <article class="shadow-lg p-6 hover:shadow-xl transition  h-fit">
-        <div class="mb-4 relative w-full">
-          <video src="./VIDEOS/REEL_CASONA.mp4" class="w-full h-auto cursor-pointer" muted></video>
-        </div>
-        <h3 class="text-sm text-[#ff0000]">LA CASONA</h3>
-      </article>
-    </section>
-
-
-    <!-- Video Card -->
-    <section class="flex flex-col justify-between">
-      <article class="shadow-lg p-6 hover:shadow-xl transition  h-fit">
-        <div class="mb-4 relative w-full">
-          <video src="./VIDEOS/REEL_CASONA.mp4" class="w-full h-auto cursor-pointer" muted></video>
-        </div>
-        <h3 class="text-sm text-[#ff0000]">La Casona</h3>
-      </article>
-    </section>
-
-
-    <section>
-      <article class="shadow-lg p-6 hover:shadow-xl transition w-80 h-auto"> <!-- Reduce article size -->
-        <video src="./VIDEOS/ENCINILLAS REEL 2.mp4" class="mb-4 w-full h-full object-cover cursor-pointer" muted></video> <!-- Video adjusts to article size -->
-        <h3 class="text-lg text-[#ff0000]">ENCINILLAS</h3>
-      </article>
-    </section>
-
+    <div class="grid gap-20 sm:grid-cols-2 lg:grid-cols-2">
+      <section>
+        <h2 class="text-4xl font-medium mb-10 text-[#ff0000]">My Photos</h2>
+        <p class="text-[#ff0000] text-xs leading-normal">
+          Camera Used: Canon EOS 250D <br>
+          Tools: CaptureOne, Lightroom, Basic Photoshop. <br>
+          [ONE YEAR OF EXPERIENCE]
+        </p>
+      </section>
+    </div>
   </div>
   
+  <div class="grid gap-1 md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 justify-items-center max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-20 pb-5">
+    <section>
+      <article class="relative transition">
+        <img src="./FOTOS/LUCKY 0 1.jpg" alt="lucky01" class="imagenclick w-full h-auto pb-1 cursor-pointer ">
+      </article>
+      <article class="relative transition">
+        <img src="FOTOS\DISTRITOPADEL 0 19.jpg" alt="lucky01" class="imagenclick w-full h-auto  pb-1 cursor-pointer">
+      </article>
+    </section>
+
+    <section>
+      <article class="relative transition">
+        <img src="./FOTOS/DISTRITOPADEL 0 9.jpg" alt="dp1" class="imagenclick w-full h-auto pb-1 cursor-pointer">
+      </article>
+      <article class="relative transition">
+        <img src="FOTOS\DISTRITOPADEL 0 105.jpg" alt="dp2" class="imagenclick w-full h-auto  pb-1 cursor-pointer">
+      </article>
+    </section>
+
+    <section>
+      <article class="relative transition">
+        <img src="./FOTOS/DISTRITOPADEL 0 42.jpg" alt="dp3" class="imagenclick w-full h-auto  pb-1 cursor-pointer">
+      </article>
+      <article class="relative transition">
+        <img src="./FOTOS/DISTRITOPADEL 0 148.jpg" alt="dp3" class="imagenclick w-full h-auto  pb-1 cursor-pointer">
+      </article>
+      
+    </section>
+  </div>
+
+  <!-- Popup Container -->
+  <div id="popup" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 hidden">
+    <div class="relative max-w-4xl">
+      <img id="popup-img" src="" alt="popup image" class="max-w-4xl h-[80vh] object-contain">
+      <button id="close-popup" class="absolute top-2 right-2 text-white text-3xl font-bold">&times;</button>
+    </div>
+  </div>
+  
+  
+<!--#endregion-->
+
+
+<!--#region Video SECTION-->
+  
+<!--#endregion-->
 
 
 
@@ -167,6 +170,34 @@
       }
     });
   });
+
+   // Seleccionar todas las imágenes clicables y el popup
+  const images = document.querySelectorAll(".imagenclick");
+  const popup = document.getElementById("popup");
+  const popupImg = document.getElementById("popup-img");
+  const closePopup = document.getElementById("close-popup");
+
+  // Agregar evento a cada imagen
+  images.forEach(image => {
+    image.addEventListener("click", () => {
+      popupImg.src = image.src; // Asignar la imagen al popup
+      popup.classList.remove("hidden"); // Mostrar el popup
+    });
+  });
+
+  // Cerrar el popup
+  closePopup.addEventListener("click", () => {
+    popup.classList.add("hidden"); // Ocultar el popup
+  });
+
+  // Cerrar el popup al hacer clic fuera de la imagen
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.classList.add("hidden"); // Ocultar el popup
+    }
+  });
+
+   
 </script>
 
 
