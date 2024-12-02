@@ -1,37 +1,66 @@
 body{
-    font-family:"Montserrat"
+  font-family:"Montserrat"
 }
 
+
 #cont_imagenes_menu{
-    width: 35%;
-    overflow: hidden;
-    background-image: url("../PORTAFOLIO/IMGS/FOTO 0 14.png");
-    background-size: cover;   /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center;  /* Centra la imagen */
+  width: 35%;
+  overflow: hidden;
+  background-image: url("../PORTAFOLIO/IMGS/FOTO 0 14.png");
+  background-size: cover;   /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center;  /* Centra la imagen */
 }
+
+
 
 
 #popup {
-    display: none;
-  }
-  
-  #popup img {
-    width: 80%; /* Mostrar al 80% del tamaño real */
-    max-height: 80%; /* Limitar altura máxima */
-    border-radius: 8px;
-  }
-  
-  .hidden {
-    display: none !important;
-  }
-  
-  #close-popup {
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  
-  #close-popup:hover {
-    color: #ff0000; /* Cambia de color al pasar el mouse */
-  }
-  
+  display: none;
+}
+
+#popup img {
+  width: 80%; /* Mostrar al 80% del tamaño real */
+  max-height: 80%; /* Limitar altura máxima */
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#close-popup {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#close-popup:hover {
+  color: #ff0000; /* Cambia de color al pasar el mouse */
+}
+
+
+
+#video-popup {
+  display: none;
+}
+
+#video-popup video {
+  width: auto;
+  height: 80vh; /* Limitar la altura al 80% de la ventana */
+  object-fit: contain;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#close-video-popup {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#close-video-popup:hover {
+  color: #ff0000; /* Cambia de color al pasar el mouse */
+}
+
