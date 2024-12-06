@@ -64,3 +64,26 @@ body{
   color: #ff0000; /* Cambia de color al pasar el mouse */
 }
 
+/* Estilo por defecto para computadoras */
+header nav ul {
+  display: flex;
+  flex-wrap: nowrap; /* Evita el colapso en computadoras */
+}
+
+/* Estilo para dispositivos móviles */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Cambia la dirección del contenedor */
+    align-items: flex-end; /* Alinea el contenido a la izquierda */
+  }
+
+  nav ul {
+    flex-direction: column; /* Hace que cada etiqueta esté en una línea */
+    gap: 10px; /* Espaciado entre las líneas */
+    margin-bottom: 15px;
+  }
+
+  nav ul li {
+    width: 100%; /* Cada elemento ocupa todo el ancho disponible */
+  }
+}
